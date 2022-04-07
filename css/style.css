@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4070f4;
+}
+
+section .box span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFF;
+    transform: rotate(calc(var(--i)*(360deg /15))) translateY(35px);
+    animation: uz 1.5s linear infinite;
+    animation-delay: calc(var(--i)*0.1s);
+    opacity: 0;
+}
+
+
+/* UzJaFaR */
+
+@keyframes uz {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
